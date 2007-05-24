@@ -7,6 +7,7 @@ License:	AFL v2.1 or GPL v2
 Group:		Libraries
 Source0:	%{name}-%{snap}.tar.gz
 # Source0-md5:	db0afd4050dc0205ca88cef03722dfd0
+Patch0:		hal-samsung_yp_z5.patch
 URL:		http://freedesktop.org/Software/hal
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -19,6 +20,8 @@ hal-info contains device information for HAL.
 
 %prep
 %setup -q -n %{name}
+# UPDATEME
+%patch0 -p1
 
 %build
 %{__libtoolize}
