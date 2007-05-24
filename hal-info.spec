@@ -1,5 +1,6 @@
 %define		snap	20070521
 Summary:	Device information for HAL
+Summary(pl.UTF-8):	Informacje o urządzeniach dla HAL-a
 Name:		hal-info
 Version:	0.0
 Release:	0.%{snap}.1
@@ -17,6 +18,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 hal-info contains device information for HAL.
+
+%description -l pl.UTF-8
+hal-info zawiera informacje o urządzeniach dla HAL-a.
 
 %prep
 %setup -q -n %{name}
