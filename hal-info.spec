@@ -12,7 +12,6 @@ Patch0:		hal-samsung_yp_z5.patch
 URL:		http://freedesktop.org/Software/hal
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	libtool
 Requires:	hal
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,11 +23,9 @@ hal-info zawiera informacje o urządzeniach dla HAL-a.
 
 %prep
 %setup -q -n %{name}
-# UPDATEME
 %patch0 -p1
 
 %build
-%{__libtoolize}
 %{__aclocal}
 %{__autoheader}
 %{__autoconf}
