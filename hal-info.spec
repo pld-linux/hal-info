@@ -12,7 +12,9 @@ Patch0:		hal-samsung_yp_z5.patch
 URL:		http://freedesktop.org/Software/hal
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-Requires:	hal
+BuildRequires:	hal-devel >= 0.5.10
+BuildRequires:	pkgconfig
+Requires:	hal >= 0.5.10
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
