@@ -1,4 +1,4 @@
-%define		snap	20081022
+%define		snap	20090202
 Summary:	Device information for HAL
 Summary(pl.UTF-8):	Informacje o urządzeniach dla HAL-a
 Name:		hal-info
@@ -7,7 +7,7 @@ Release:	0.%{snap}.1
 License:	AFL v2.1 or GPL v2
 Group:		Libraries
 Source0:	http://hal.freedesktop.org/releases/%{name}-%{snap}.tar.gz
-# Source0-md5:	19dfb96562466b5f3a956a375778ffb2
+# Source0-md5:	f62f0a9ddbb3225a2746c4615ed9d8dd
 Patch0:		hal-samsung_yp_z5.patch
 URL:		http://freedesktop.org/Software/hal
 BuildRequires:	autoconf >= 2.57
