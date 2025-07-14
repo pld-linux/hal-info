@@ -25,7 +25,7 @@ hal-info zawiera informacje o urządzeniach dla HAL-a.
 
 %prep
 %setup -q -n %{name}-%{snap}
-%patch0 -p1
+%patch -P0 -p1
 
 [ -f VERSION ] && exit 1
 echo %{snap} > VERSION
